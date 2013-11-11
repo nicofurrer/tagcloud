@@ -143,7 +143,7 @@ class Tagcloud extends Facade
 			$tagAttributes['size'] = $this->_tagsArray[$tag]['size'];
 		}
 		$this->_tagsArray[$tag] = $tagAttributes;
-		//$this->addAttributes($tagAttributes);
+		$this->addAttributes($tagAttributes);
 		return $this->_tagsArray[$tag];
 	}
 
